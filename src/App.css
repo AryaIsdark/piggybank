@@ -1,5 +1,6 @@
 .App {
-  background: whitesmoke;
+  background: radial-gradient(#e7a7932e, #ffd8cc);
+  height: 100vh;
 }
 
 .App-logo {
@@ -11,7 +12,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -20,7 +20,7 @@
   color: #09d3ac;
 }
 
-.d-flex{
+.d-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,7 +35,7 @@
   box-shadow: 0 0 4px #e2e2e2;
 }
 
-.ant-list-items li{
+.ant-list-items li {
   background: white;
   margin: 15px;
   border-radius: 4px;

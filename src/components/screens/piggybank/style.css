@@ -1,0 +1,26 @@
+.piggy-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.piggy {
+  background-image: url("images/piggy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 300px;
+  background-position: center center;
+  animation: shake;
+}
+
+.piggy-pay {
+  border-radius: 40px;
+  color: #e7a793;
+  width: 260px;
+  border: 2px solid #e7a793;
+  height: 50px;
+  font-size: 20px;
+}
