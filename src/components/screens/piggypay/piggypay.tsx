@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button } from "antd";
 import "./style.css";
+import { postPay } from "api/apiFunctions";
+import { useHistory } from "react-router-dom";
 
 const tickets = [
   { id: "1", type: "candy", price: 15 },
@@ -10,11 +12,36 @@ const tickets = [
 ];
 
 const PiggyPayScreen = () => {
-  const [selectedTicket, setSelectedTicket] = useState({ id: "0", price: 0 });
+  const history = useHistory();
+  const [selectedTicket, setSelectedTicket] = useState({
+    id: "0",
+    type: "",
+    price: 0,
+  });
+  const [hasError, setHasError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleOnTicketSelect = (element: any) => {
-    console.log(element);
     setSelectedTicket(element);
   };
+
+  const handleOnPayClick = async () => {
+    setIsLoading(true);
+    setHasError(false);
+    try {
+      await postPay({
+        type: selectedTicket.type,
+        price: selectedTicket.price,
+      });
+      history.replace("/reciept/" + selectedTicket.type);
+    } catch (err) {
+      setHasError(true);
+    } finally {
+      setIsLoading(false);
+      setHasError(true);
+    }
+  };
+
   return (
     <div className={"piggy-pay-container"}>
       <div className={"tickets"}>
@@ -33,8 +60,9 @@ const PiggyPayScreen = () => {
         {selectedTicket.price > 0 && (
           <>
             {selectedTicket.price} .Kr
-            <hr></hr>
             <Button
+              loading={isLoading}
+              onClick={handleOnPayClick}
               type={"primary"}
               size={"large"}
               shape={"circle"}
