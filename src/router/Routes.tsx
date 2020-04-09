@@ -3,12 +3,14 @@ import { Switch, Route } from "react-router-dom";
 import Posts from "components/modules/posts/posts";
 import PostDetails from "components/modules/postDetails/postDetails";
 import PiggyBankScreen from "components/screens/piggybank/piggybank";
+import PiggyPayScreen from "components/screens/piggypay/piggypay";
 
 const Routes = () => {
   return (
     <Switch>
       <Route exact path="/" component={PiggyBankScreen} />
       <Route exact path="/home" component={PiggyBankScreen} />
+      <Route exact path="/pay" component={PiggyPayScreen} />
       <Route exact path="/posts" component={Posts} />
       <Route
         exact

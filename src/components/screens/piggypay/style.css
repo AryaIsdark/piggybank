@@ -1,0 +1,58 @@
+.piggy-pay-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.tickets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticket-item {
+  border: 3px solid #fddfd6;
+  padding: 17px;
+  margin: 10px;
+  background: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  width: 43%;
+  text-align: center;
+}
+
+.selected {
+  background: #ff734a;
+  color: white;
+  border: 2px solid #ff3a00;
+}
+
+.piggy-pay-price {
+  margin-top: 30px;
+  font-size: 60px;
+  color: black;
+  text-shadow: -3px -1px 1px white;
+  font-family: monospace;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.piggy-pay-price .ant-btn-icon-only.ant-btn-lg {
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  font-size: 50px;
+}
+
+.ant-btn-primary {
+  color: #fff;
+  background-color: #52c41a;
+  border-color: #10ba05;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}

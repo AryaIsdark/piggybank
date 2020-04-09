@@ -25,9 +25,15 @@
   border: 2px solid #e7a793;
   height: 50px;
   font-size: 20px;
+  text-align: center;
+  line-height: 42px;
+  background: white;
 }
 
 .piggy-balance {
-  position: absolute;
+  position: relative;
   text-align: center;
+  font-size: 40px;
+  background: #c0c0c000;
+  top: -30px;
 }
