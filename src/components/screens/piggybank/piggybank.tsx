@@ -6,7 +6,9 @@ const PiggyBankScreen = () => {
   return (
     <>
       <div className={"piggy-container"}>
-        <div className={"piggy"}></div>
+        <div className={"piggy"}>
+          <div className={"piggy-balance"}>250 DKK</div>
+        </div>
         <Button className={"piggy-pay"}>PAY</Button>
       </div>
     </>
