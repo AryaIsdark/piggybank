@@ -31,14 +31,3 @@
   position: absolute;
   text-align: center;
 }
-
-.piggy-coins {
-  background-image: url("images/coins.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 47px;
-  position: absolute;
-  left: 50px;
-  top: -23px;
-  width: 100%;
-}
