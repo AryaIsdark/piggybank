@@ -8,3 +8,5 @@ export const getComments = (entityType: string, entityId: string) =>
   api.get<any>(`/${entityType}/${entityId}/comments`);
 
 export const postPay = (params: any) => api.post<any>(`/payments`, params);
+
+export const getAllPayments = () => api.get<any>(`/payments`);
