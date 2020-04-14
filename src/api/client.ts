@@ -34,4 +34,8 @@ export const api = create({
   baseURL: "https://waves-api-dev.herokuapp.com/api/v1/",
 });
 
+export const fbApi = create({
+  baseURL: 'https://graph.facebook.com/'
+})
+
 api.addResponseTransform(createResponseTransform());

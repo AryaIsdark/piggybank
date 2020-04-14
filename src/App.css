@@ -16,8 +16,36 @@
   color: white;
 }
 
+.page-header {
+  background: #ffffff82;
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+}
+
+.profile-image {
+  border-radius: 100%;
+}
+
+.profile-name {
+  padding: 10px;
+  font-size: 17px;
+}
+
 .App-link {
   color: #09d3ac;
+}
+
+.fb-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+.fb-login-button {
+  background: #4267b2;
+  color: white;
 }
 
 .d-flex {

@@ -34,7 +34,7 @@ const PiggyBankScreen = () => {
 
   useEffect(() => {
     loadData();
-  }, []);
+  }, []); 
 
   return (
     <>
