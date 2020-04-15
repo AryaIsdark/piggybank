@@ -8,7 +8,7 @@ const tickets = [
   { id: "1", type: "candy", price: 15 },
   { id: "2", type: "alcohol", price: 20 },
   { id: "3", type: "smokes", price: 20 },
-  { id: "4", type: "bad habbits", price: 1 },
+  { id: "4", type: "bad habits", price: 1 },
 ];
 
 const PiggyPayScreen = () => {
