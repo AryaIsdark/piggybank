@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import * as queryString from "query-string";
 import { getFbUser, getFbAccessTokenFromCode } from "api/apiFunctions";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import { Button } from "antd";
 
 const stringifiedParams = queryString.stringify({
@@ -60,6 +60,10 @@ const FacebookAuth = () => {
       <Button className={"fb-login-button"} onClick={handleLoginClick}>
         Login with Facebook
       </Button>
+      <br></br>
+      <div>
+        Read our <Link to={"/privacypolicy"}> privacy policy</Link>
+      </div>
     </div>
   );
 };
