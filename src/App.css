@@ -1,6 +1,7 @@
 .App {
   background: radial-gradient(#e7a7932e, #ffd8cc);
   height: 100vh;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -21,6 +22,7 @@
   position: fixed;
   width: 100%;
   padding: 20px;
+  z-index: 9999999999;
 }
 
 .profile-image {
