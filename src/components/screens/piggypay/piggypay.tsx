@@ -5,10 +5,10 @@ import { postPay } from "api/apiFunctions";
 import { useHistory } from "react-router-dom";
 
 const tickets = [
-  { id: "1", type: "candy", price: 15 },
-  { id: "2", type: "alcohol", price: 20 },
-  { id: "3", type: "smokes", price: 20 },
-  { id: "4", type: "bad habits", price: 1 },
+  { id: "1", icon: "🍭", type: "candy", price: 15 },
+  { id: "2", icon: "🍹", type: "alcohol", price: 20 },
+  { id: "3", icon: "🚬", type: "smokes", price: 20 },
+  { id: "4", icon: "🖤", type: "bad habits", price: 1 },
 ];
 
 const PiggyPayScreen = () => {
@@ -52,6 +52,7 @@ const PiggyPayScreen = () => {
               "selected"}`}
             onClick={() => handleOnTicketSelect(element)}
           >
+            <span style={{ fontSize: "20px" }}>{element.icon}</span>{" "}
             {element.type}
           </div>
         ))}
