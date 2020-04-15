@@ -6,6 +6,7 @@ import PiggyBankScreen from "components/screens/piggybank/piggybank";
 import PiggyPayScreen from "components/screens/piggypay/piggypay";
 import PiggyRecieptScreen from "components/screens/piggyreciept/piggyreciept";
 import FacebookAuth from "components/modules/facebookAuth/facebookAuth";
+import PrivacyPolicy from "components/screens/privacypolicy/privacypolicy";
 
 const Routes = () => {
   return (
@@ -24,6 +25,11 @@ const Routes = () => {
         exact
         path="/posts/:postId"
         render={(props: any) => <PostDetails {...props} />}
+      />
+      <Route
+        exact
+        path="/privacypolicy"
+        render={(props: any) => <PrivacyPolicy />}
       />
       <Route
         path="/authenticate/facebook"
