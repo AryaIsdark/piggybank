@@ -3,6 +3,7 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import { getAllPayments } from "api/apiFunctions";
 import CountUp from "react-countup";
+import { Spin } from "antd";
 
 const PiggyBankScreen = () => {
   const [hasError, setHasError] = useState(false);
@@ -34,18 +35,20 @@ const PiggyBankScreen = () => {
 
   useEffect(() => {
     loadData();
-  }, []); 
+  }, []);
 
   return (
     <>
       <div className={"piggy-container"}>
         <div className={"piggy"}>
           <div className={"piggy-balance"}>
-            <CountUp end={balance} />
-            .Kr
+            <Spin size={"large"} spinning={isLoading}>
+              <CountUp end={balance} />
+              .Kr
+            </Spin>
           </div>
         </div>
-        <Link to={"/pay"} className={"piggy-pay"}>
+        <Link to={"/pay"} hidden={isLoading} className={"piggy-pay"}>
           PAY
         </Link>
       </div>
