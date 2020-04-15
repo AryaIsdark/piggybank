@@ -22,11 +22,15 @@
 }
 
 .page-header {
-  background: #ffffff82;
+  color: #dd8e76;
+  background: #ffffff;
   position: fixed;
   width: 100%;
-  padding: 20px;
+  padding: 21px 30px 32px;
   z-index: 9999999999;
+  border-radius: 0 0 30% 76%;
+  box-shadow: 0 6px 10px -8px #0000007a;
+  direction: rtl;
 }
 
 .profile-image {

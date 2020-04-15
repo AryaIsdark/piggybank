@@ -35,5 +35,34 @@
   text-align: center;
   font-size: 40px;
   background: #c0c0c000;
-  top: -30px;
+  top: -45px;
+  left: 17px;
+}
+
+.piggy-coin {
+  background: #ffd400;
+  box-shadow: 0 0 5px #737171;
+  border-radius: 100%;
+  color: #9e8300;
+  width: 125px;
+  height: 125px;
+  border: 13px dashed #e4bd00;
+  font-size: 27px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

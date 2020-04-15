@@ -42,10 +42,10 @@ const PiggyBankScreen = () => {
       <div className={"piggy-container"}>
         <div className={"piggy"}>
           <div className={"piggy-balance"}>
-            <Spin size={"large"} spinning={isLoading}>
+            <div className={"piggy-coin"}>
               <CountUp end={balance} />
-              .Kr
-            </Spin>
+              <div style={{ fontSize: "18px" }}>Kr</div>
+            </div>
           </div>
         </div>
         <Link to={"/pay"} hidden={isLoading} className={"piggy-pay"}>
