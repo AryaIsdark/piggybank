@@ -1,6 +1,10 @@
+#root {
+  height: 100%;
+}
+
 .App {
   background: radial-gradient(#e7a7932e, #ffd8cc);
-  min-height: 100vh;
+  height: 100%;
   overflow: auto;
 }
 
