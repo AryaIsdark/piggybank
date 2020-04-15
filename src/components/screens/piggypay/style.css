@@ -31,14 +31,17 @@
 }
 
 .piggy-pay-price {
-  margin-top: 30px;
   font-size: 60px;
   color: black;
-  text-shadow: -3px -1px 1px white;
   font-family: monospace;
   display: flex;
   flex-flow: column;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  background: #21bb0a;
+  padding: 20px;
+  width: 100%;
 }
 
 .piggy-pay-price .ant-btn-icon-only.ant-btn-lg {

@@ -57,8 +57,8 @@ const PiggyPayScreen = () => {
           </div>
         ))}
       </div>
-      <div className={"piggy-pay-price"}>
-        {selectedTicket.price > 0 && (
+      {selectedTicket.price > 0 && (
+        <div className={"piggy-pay-price"}>
           <>
             {selectedTicket.price} .Kr
             <Button
@@ -70,8 +70,8 @@ const PiggyPayScreen = () => {
               icon={"check"}
             ></Button>
           </>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

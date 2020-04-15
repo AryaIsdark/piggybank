@@ -78,3 +78,10 @@
   margin: 15px;
   border-radius: 4px;
 }
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  color: #21bb0a;
+  background-color: #ffffff;
+  border-color: #52c41a;
+}
